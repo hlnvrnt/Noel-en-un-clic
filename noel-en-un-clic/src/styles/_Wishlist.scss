@@ -1,0 +1,66 @@
+.renne{
+	display:flex;
+	justify-content: flex-start;
+	width:100vw;
+	padding-top: 20px;
+	img{
+		height:11vh;
+		width:5vw;
+	}
+}
+
+.background-wishlist {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.Letter-wrapper {
+		background-image: url("/images/letter.png");
+		width: 46%;
+		height: 65%;
+
+		.header-wrapper {
+			display: flex;
+			justify-content: center;
+			margin-left: 25%;
+			margin-top: 8%;
+			width: 50%;
+
+			
+		}
+
+		.form-wrapper {
+			// 	border: 2px solid pink;
+			//     padding-left: 5%;
+			//    margin-top: 10%;
+			// 	width: 70%;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			border-style: none;
+			height: 50px;
+			width: 300px;
+			.input {
+				border-style: none;
+				background-color: #497a37;
+				color: white;
+				height: 50px;
+				width: 300px;
+				border-radius: 5px;
+				padding-left: 30px;
+			}
+		}
+		.submit {
+			background-color: #497a37;
+			font-size: calc(var(--font-size-standard) * 1.2);
+			color: var(--primary-color);
+			border-style: none;
+			border: 3px solid #1a1919;
+			border-radius: 5px;
+			width: 40px;
+			height: 40px;
+			cursor: pointer;
+		}
+	}
+}
