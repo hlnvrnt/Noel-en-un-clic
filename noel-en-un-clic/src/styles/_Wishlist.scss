@@ -15,8 +15,7 @@
 			margin-top: 8%;
 			width: 50%;
 
-			h1 {
-			}
+			
 		}
 
 		.form-wrapper {
@@ -33,7 +32,7 @@
 			.input {
 				border-style: none;
 				background-color: #497a37;
-                color: white;
+				color: white;
 				height: 50px;
 				width: 300px;
 				border-radius: 5px;
@@ -41,7 +40,7 @@
 			}
 		}
 		.submit {
-			background-color: #497A37;
+			background-color: #497a37;
 			font-size: calc(var(--font-size-standard) * 1.2);
 			color: var(--primary-color);
 			border-style: none;
