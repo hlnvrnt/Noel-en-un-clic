@@ -1,0 +1,22 @@
+.calendarNumber{
+    padding-top: 10px; 
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9c0100;
+    border-radius: 3px;
+    color: #F3CA3A; 
+
+    .img-container {
+        width: 100%;
+        height: 70%;
+    }
+
+    img{
+        height : 100%;
+        width: 100%; 
+        object-fit: cover;
+    }
+}
