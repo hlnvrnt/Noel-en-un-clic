@@ -1,8 +1,16 @@
 import MoviesData from "./MoviesData"; 
+import { NavLink } from 'react-router-dom';
 
 function MovieCalendar () {
     return (
-        <div>hello</div>
+
+        <div>
+        <NavLink to="/">
+        <div className="renne">
+        <img src="/images/reindeer.png" alt="rennes" />
+        </div>
+        </NavLink>
+        </div>
     )
 
         

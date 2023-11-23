@@ -1,6 +1,13 @@
+import { NavLink } from 'react-router-dom';
+
 export default function Wishlist() {
 	return (
 		<>
+		<NavLink to="/">
+        	<div className="renne">
+            <img src="/images/reindeer.png" alt="rennes" />
+        	</div>
+        	</NavLink>
 			<div className="background-wishlist">
 				<div className="Letter-wrapper">
 					<div className="header-wrapper">

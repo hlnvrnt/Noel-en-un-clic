@@ -1,7 +1,15 @@
+import { NavLink } from 'react-router-dom';
+
+
 function Menu(){
 
     return(
         <>
+        <NavLink to="/">
+        <div className="renne">
+        <img src="/images/reindeer.png" alt="rennes" />
+        </div>
+        </NavLink>
         <div className="menu-container">
             <div className="lutin-container">
                 <img src="../../public/page_menu/before.png" className="menu-card-icon" alt="icon-before" />
