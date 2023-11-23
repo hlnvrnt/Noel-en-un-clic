@@ -1,0 +1,34 @@
+.background-wishlist {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.Letter-wrapper {
+		background-image: url("/images/letter.png");
+		width: 46%;
+		height: 65%;
+
+		.header-wrapper {
+			display: flex;
+			justify-content: center;
+			margin-left: 25%;
+			margin-top: 8%;
+			width: 50%;
+
+			h1 {
+			}
+		}
+
+		.form-wrapper {
+			border: 2px solid pink;
+            padding-left: 10%;
+			width: 70%;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			.input {
+              width: 60%;
+			}
+		}
+	}
+}
