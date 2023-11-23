@@ -1,11 +1,25 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
+
+
+
+import Menu from './pages/Menu.jsx';
+
+
+import React from "react"
+import { Outlet } from "react-router-dom"
+
 
 function App() {
-	return (
-		<div>
-			<Outlet />
-		</div>
-	);
-}
+
+
+  return (
+
+    <Menu />
+
+    <div>
+      <Outlet />
+    </div>
+
+  )
+
+
 export default App;
