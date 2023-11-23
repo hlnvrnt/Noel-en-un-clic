@@ -1,4 +1,3 @@
-import reactLogo from "./assets/react.svg";
 import Wishlist from "./pages/Wishlist.jsx";
 
 function App() {
