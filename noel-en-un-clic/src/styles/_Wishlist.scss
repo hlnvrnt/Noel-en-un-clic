@@ -15,40 +15,46 @@
 			margin-top: 8%;
 			width: 50%;
 
-			
+			h1 {
+				font-family: var(--font-family-christmas);
+			}
 		}
 
 		.form-wrapper {
-			// 	border: 2px solid pink;
-			//     padding-left: 5%;
-			//    margin-top: 10%;
-			// 	width: 70%;
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
-			border-style: none;
 			height: 50px;
-			width: 300px;
+            width: 60%;
+            padding-left: 5%;
+            padding-top: 10%;
+
 			.input {
 				border-style: none;
+				border: 3px solid #335327;
 				background-color: #497a37;
-				color: white;
+				color: var(--color-text);
 				height: 50px;
 				width: 300px;
 				border-radius: 5px;
-				padding-left: 30px;
+				padding-left: 10px;
+
+				&::placeholder {
+					color: var(--color-text);
+				}
 			}
-		}
-		.submit {
-			background-color: #497a37;
-			font-size: calc(var(--font-size-standard) * 1.2);
-			color: var(--primary-color);
-			border-style: none;
-			border: 3px solid #1a1919;
-			border-radius: 5px;
-			width: 40px;
-			height: 40px;
-			cursor: pointer;
+
+			.submit {
+				background-color: #497a37;
+				font-size: calc(var(--font-size-standard) * 1.2);
+				color: var(--color-text);
+				border-style: none;
+				border: 3px solid #335327;
+				border-radius: 5px;
+				width: 40px;
+				height: 40px;
+				cursor: pointer;
+			}
 		}
 	}
 }

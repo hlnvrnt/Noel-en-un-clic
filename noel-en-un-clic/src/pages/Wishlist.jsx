@@ -1,4 +1,5 @@
 export default function Wishlist() {
+    
 	return (
 		<>
 			<div className="background-wishlist">
@@ -6,6 +7,7 @@ export default function Wishlist() {
 					<div className="header-wrapper">
 						<h1>Ma liste au Père Noël</h1>
 					</div>
+
 					<form className="form-wrapper">
 						<input
 							id="liste"

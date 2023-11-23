@@ -4,54 +4,39 @@
 	padding: 0;
 }
 
-<<<<<<< HEAD
 html,
 body,
 :root {
+	min-height: 100vh;
 	overflow-x: hidden;
-	overflow-y: hidden;
-}
-body {
-	background-image: url("/images/Background_MainPage.png");
-    background-size: cover;
-	height: 100vh;
-	width: 100vw;
-}
-=======
-html, body, :root {
-    min-height: 100vh;
-    overflow-x: hidden;
 }
 
-body{
-    background-image: url("/images/Background_MainPage.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
-    width: 100vw;
+body {
+	background-image: url("/images/Background_MainPage.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100vw;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
 @font-face {
-  font-family: "christmas and santona";
-  src:
-    local("christmas and santona"),
-    url("../assets/christmas_and_santona/Christmas\ and\ Santona.ttf")
-      format("ttf");
+	font-family: "christmas and santona";
+	src: local("christmas and santona"),
+		url("../assets/christmas_and_santona/Christmas\ and\ Santona.ttf")
+			format("ttf");
 }
 
 :root {
-  --font-family-christmas: "christmas and santona";
-  --font-family: "Crimson Text", serif;
-  --color-text: white;
-  --color-recette: #3f3c3c;
-  --color-menu: #f2ae00;
-  --background-color-carte-bouton: #dfa000;
-  --background-color-plat-menu-list: rgba(243, 202, 58, 0.7);
-  --background-color-plat-recette-card: rgba(245, 236, 227, 0.7);
-  --background-color-phrases-lutin: #497a37;
+	--font-family-christmas: "christmas and santona";
+	--font-family: "Crimson Text", serif;
+	--color-text: white;
+	--color-recette: #3f3c3c;
+	--color-menu: #f2ae00;
+	--background-color-carte-bouton: #dfa000;
+	--background-color-plat-menu-list: rgba(243, 202, 58, 0.7);
+	--background-color-plat-recette-card: rgba(245, 236, 227, 0.7);
+	--background-color-phrases-lutin: #497a37;
 }
-
->>>>>>> dev
