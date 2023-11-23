@@ -1,11 +1,11 @@
-.renne{
-	display:flex;
+.renne {
+	display: flex;
 	justify-content: flex-start;
-	width:100vw;
+	width: 100vw;
 	padding-top: 20px;
-	img{
-		height:11vh;
-		width:5vw;
+	img {
+		height: 11vh;
+		width: 5vw;
 	}
 }
 
@@ -16,12 +16,12 @@
 	align-items: center;
 
 	.Letter-wrapper {
+		animation: pop-in 0.5s;
 		background-image: url("/images/letter.png");
 		width: 46%;
 		height: 65%;
 
 		.header-wrapper {
-			
 			display: flex;
 			justify-content: center;
 			margin-left: 25%;
@@ -109,6 +109,16 @@
 				opacity: 1;
 			}
 		}
+		@keyframes pop-in {
+			0% {
+				opacity: 0;
+				transform: scale(0.1);
+			}
+			100% {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
 		.submitted-items {
 			animation: scaleIn 0.8s ease-out;
 			position: absolute;
@@ -130,7 +140,7 @@
 			border: 3px solid #a50b0b;
 			background-color: #c50000;
 			margin-left: 65%;
-			margin-top: 35%;
+			margin-top: 32%;
 			height: 45px;
 			width: 160px;
 

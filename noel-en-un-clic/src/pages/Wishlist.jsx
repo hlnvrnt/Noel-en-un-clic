@@ -57,7 +57,7 @@ export default function Wishlist() {
 					)}
 
 					<button className="send" type="submit">
-						<NavLink to="/">
+						<NavLink to="/sendletter">
 							<p>
 								<strong>Envoyer 🎅🏻</strong>
 							</p>
