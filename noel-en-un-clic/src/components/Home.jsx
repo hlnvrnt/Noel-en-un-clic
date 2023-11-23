@@ -4,6 +4,11 @@ import { NavLink } from 'react-router-dom';
 const Home = () => {
     return (
     <div className="homepage">
+        <NavLink to="/">
+        <div className="renne">
+            <img src="/images/reindeer.png" alt="rennes" />
+        </div>
+        </NavLink>
         <h1>Noël en un clic</h1>
         <div className="icones">
             <div className="icones-firstline">

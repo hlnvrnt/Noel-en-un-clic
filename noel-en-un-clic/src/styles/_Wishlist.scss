@@ -1,8 +1,20 @@
+.renne{
+	display:flex;
+	justify-content: flex-start;
+	width:100vw;
+	padding-top: 20px;
+	img{
+		height:11vh;
+		width:5vw;
+	}
+}
+
 .background-wishlist {
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	.Letter-wrapper {
 		background-image: url("/images/letter.png");
 		width: 46%;
