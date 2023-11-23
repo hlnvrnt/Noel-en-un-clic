@@ -6,10 +6,10 @@ const menuItemsData = [
         category: "dessert"
     }, 
     {
-        id: 1,  
-        name: "Pain aux céréales",  
-        picture: "/images/pain.jpg", 
-        category: "accompagnement", 
+        id: 1,
+        name: "Rôti aux asperges",  
+        picture: "/images/asparagus.jpg", 
+        category: "plat" 
     }, 
     {
         id: 3,  
@@ -24,10 +24,10 @@ const menuItemsData = [
         category: "dessert"
     },
     {
-        id: 5,  
-        name: "Cake",  
-        picture: "/images/cake.jpg", 
-        category: "dessert"
+        id: 5,
+        name: "Noix de Saint Jacques",  
+        picture: "/images/noix_saint_jacques.jpg", 
+        category: "entre" 
     }, 
     {
         id: 6,  
@@ -36,10 +36,10 @@ const menuItemsData = [
         category: "dessert"
     }, 
     {
-        id: 7,  
-        name: "Cupcakes au chocolat",  
-        picture: "/images/cupcakes.jpg", 
-        category: "dessert"
+        id: 7,
+        name: "Pâté en croute",  
+        picture: "/images/pate_en_croute.jpg", 
+        category: "entree"  
     }, 
     {
         id: 8,  
@@ -54,10 +54,10 @@ const menuItemsData = [
         category: "dessert"
     }, 
     {
-        id: 10,  
-        name: "Bircuits au pain d'épice",  
-        picture: "/images/cookies_gingerbread.jpg", 
-        category: "dessert"
+        id: 10,
+        name : "Escargot de Bourgogne", 
+        picture: "/images/esscargots.jpg",
+        category: "plat"  
     }, 
     {
         id: 11,  
@@ -116,7 +116,7 @@ const menuItemsData = [
     {
         id: 21,  
         name: "Roti de boeuf",  
-        picture: "/images/roti_boeuf/jpg", 
+        picture: "/images/roti_boeuf.jpg", 
         category: "plat"
     },  
     {
@@ -127,21 +127,21 @@ const menuItemsData = [
     },  
     {
         id: 23,  
-        name: "Pâté en croute",  
-        picture: "/images/pate_en_croute.jpg", 
-        category: "entree"
+        name: "Cupcakes au chocolat",  
+        picture: "/images/cupcakes.jpg", 
+        category: "dessert"
     }, 
     {
         id: 24, 
-        name : "Escargot de Bourgogne", 
-        picture: "/images/escargots.jpg",
-        category: "plat"
+        name: "Bircuits au pain d'épice",  
+        picture: "/images/cookies_gingerbread.jpg", 
+        category: "dessert"
     },
     {
         id: 25,  
-        name: "Noix de Saint Jacques",  
-        picture: "/images/noix_saint_jacques.jpg", 
-        category: "entree"
+        name: "Chocolate cakes",  
+        picture: "/images/cake.png", 
+        category: "dessert"
     }, 
     {
         id: 26,  
@@ -151,9 +151,9 @@ const menuItemsData = [
     }, 
     {
         id: 27,  
-        name: "Rôti aux asperges",  
-        picture: "/images/aspergus.jpg", 
-        category: "plat"
+        name: "Pain aux céréales",  
+        picture: "/images/pain.jpg", 
+        category: "plat",
     },  
 ]
 

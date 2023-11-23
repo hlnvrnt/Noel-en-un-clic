@@ -1,10 +1,10 @@
 .menu-container{
-    padding: 2% 2% 15% 2%;
-    width: 60vw;
+    padding: 0% 2% 15% 2%;
+    width: 70vw;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 30px;
+    gap: 20px;
     
 
     .menu-card-container{
@@ -15,7 +15,7 @@
         //background-color: white;
 
         h1{
-            font-size: 60px;
+            font-size: 50px;
             padding-bottom: 5%;
             color: var(--color-text);
         }
@@ -27,11 +27,18 @@
             .arrow-container{
                 width: 15%;
                 padding: 0%;
+
+                button{
+                    background: none;
+                    border: none;
+                }
             }
             .arrow{
                 width: 100%;
                 font-size: 38px;
                 color: #FAFDF3; 
+                padding-left: 10px;
+                padding-right: 10px;
                 
                 &:hover{
                     color: #a5a58b;
@@ -47,15 +54,20 @@
 
                 .repas-image-category-container{
                     position: relative;
+                    width: 400px;
+
                     img{
                         width: 100%;
+                        object-fit: cover;
+                        height: 240px;
                         border-radius: 10px 10px 0 0;
+
                     }            
                     p{
-                        font-size: 20px;
+                        font-size: 18px;
                         padding: 1% 5% 1% 5%;
                         position: absolute;
-                        background: rgba(255, 255, 255, 0.5);
+                        background: rgba(255, 255, 255, 0.7);
                         border-radius: 8px;
                         bottom: 5%;
                         right: 3%;
@@ -65,10 +77,12 @@
                 .repasname-button-container{
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
                     padding: 5% 6%;
 
-                    h2{
+                    p{
                         color: 3F3C3C;
+                        font-size: 22px;
                     }
 
                     button{
@@ -92,13 +106,13 @@
     }
 
     .lutin-text-container{
-        padding-top: 3%;
-        padding-left:50%; 
+        padding-top: 8%;
+        padding-left:26%; 
         display: flex;
         //background-color: violet;
 
         .image-lutin-container{
-            width: 40%;
+            width: 20%;
         }
         .image-lutin{
             width: 100%;
@@ -127,22 +141,25 @@
             p{
                 color: beige;
                 background-color: green;
+                border-radius: 10px;
                 padding: 10% 10%;
                 font-size: 20px;
+                font-family: var(--font-family);
             }
         }
     }
 
     .chosen-menu-container{
         background-color: beige;
-        height: 50%;
+        height: 80vh;
         position: relative;
+        padding: 0 10px;
 
         .pin-container{
-            width: 10%;
+            width: 12%;
             position: absolute;
             top: -15px;
-            right: 50%;
+            right: 40%;
 
             .pin{
                 width: 100%;
@@ -153,56 +170,103 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 5% 0 5% 0;
+            padding: 8% 0 5% 0;
+
+            img{
+                width: 30px;
+            }
 
             h3{
-                font-size: 50px;
+                font-size: 36px;
+                padding-left: 10px;
                 font-family: var(--font-family-christmas);
             }
         }
 
         .menu-name-container{
-            padding: 5% 3%;
+            padding: 6% 0;
             display: flex;
             justify-content: space-between;
+            height: 20%;
 
             .left-block{
-                display: flex;
+                display: flex;    
             }
 
             .menu-category{
-                margin-left: 8px;
-                padding: 2% 3%;
+                width: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 12px 0 12px;
+                padding: 2% 5%;
                 background-color: var(--background-color-plat-menu-list);
                 border-radius: 5px;
-                font-size: 20px;
+                font-size: 16px;
+            }
+
+            .plat{
+                background-color: white;
+            }
+            
+            .dessert{
+                background-color: #f7dbd6;
+            }
+
+            .boisson{
+                background-color: #f9ef94;
+            }
+
+            .gouter{
+                background-color: #c78329;
+            }
+
+            .chosen-menu-image{
+                width: 140px;
+               // height: 100%;
+                
+
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    
+                    
+                }
+            }
+
+            .chosen-category-name-container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100px;
+                
             }
 
             .chosen-menu-name{
-                margin-left: 5px;
-                font-size: 18px;
+                //margin-left: 5px;
+                text-align: center;
+                font-size: 16px;
                 padding: 2% 3%;
-                font-size: 20px;
-
             }
-
-        
-        .couvert-icon-container{
-            width: 10%;
-
-            img{
-                width: 100%;
-            }
-        }
 
         .delete-icon-container{
-            width: 40%;
+            width: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            button{
+                background: none;
+                border: none;
+            }
             
             .icon-delete{
-                width: 100%;
+                width: 70%;
+                padding-right: 4px;
+                font-size: 30px;
                 color: #a5a58b;  
                 &:hover{
                     color: gray;
@@ -212,10 +276,5 @@
 
         }
         }
-    }
-    .menu-card-icon{
-        width: 30%;
-    }
-
-    
+    }    
 }
