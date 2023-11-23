@@ -1,4 +1,8 @@
 import { NavLink } from 'react-router-dom';
+import { FaArrowCircleRight } from "react-icons/fa";
+import { FaArrowCircleLeft } from "react-icons/fa";
+import { FaTrash } from "react-icons/fa";
+
 function Menu(){
 
     return(
@@ -14,7 +18,8 @@ function Menu(){
                     <h1>Recettes de noël</h1>
                     <div className="arrow-repas-container">
                         <div className="arrow-container">
-                            <img src="../../public/page_menu/before.png" className="arrow" alt="icon-before" />
+                            <FaArrowCircleLeft className="arrow"/>
+                            {/*<img src="../../public/page_menu/before.png" className="arrow" alt="icon-before" />*/}
                         </div>
                         <div className="repas-card-container">
                             <div className="repas-image-category-container">
@@ -27,9 +32,10 @@ function Menu(){
                             </div>
                         </div>
                         <div className="arrow-container">
-                            <img src="../../public/page_menu/next.png" className="arrow" alt="icon-next" />
+                            <FaArrowCircleRight className="arrow"/>
+                            {/*<img src="../../public/page_menu/next.png" className="arrow" alt="icon-next" /> */}
                         </div>
-                    </div>
+                   </div>
                 </div>
                 <div className="chosen-menu-container">
                     <div className="pin-container">
@@ -51,7 +57,8 @@ function Menu(){
                         </div>
                         </div>
                         <div className="delete-icon-container">
-                            <img src="../../public/page_menu/delete.png" className="menu-card-icon" alt="icon-delete" />
+                            <FaTrash className="icon-delete"/>
+                            {/*<img src="../../public/page_menu/delete.png" className="menu-card-icon" alt="icon-delete" />*/}
                         </div>
                     </div>
                 </div>
