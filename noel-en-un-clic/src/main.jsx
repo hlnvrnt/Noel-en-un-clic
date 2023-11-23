@@ -3,7 +3,10 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import "./styles/index.scss"
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import Home from "./pages/Home.jsx";
+import Home from "./components/Home.jsx";
+import MovieCalendar from "./pages/MovieCalendar.jsx";
+import Wishlist from "./pages/Wishlist.jsx";
+import Menu from "./pages/Menu.jsx";
 
 
 const router = createBrowserRouter(
@@ -15,7 +18,20 @@ const router = createBrowserRouter(
         {
           index: true,
           element: <Home />,
-        }
+        },
+        {
+          path: "moviecalendar",
+          element: <MovieCalendar />,
+        },
+        {
+          path: "wishlist",
+          element: <Wishlist />,
+        },
+        {
+          path: "menu",
+          element: <Menu />,
+        },
+
       ]
     }
   ]
