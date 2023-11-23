@@ -1,8 +1,200 @@
 .menu-container{
-    background-color: red;
+    padding: 15% 2% 15% 2%;
+    width: 60vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    
 
+    .menu-card-container{
+        padding-top: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        //background-color: white;
 
-    .menu-card-icon{
-        width: 30px;
+        h1{
+            font-size: 50px;
+            padding-bottom: 5%;
+            color: var(--color-text);
+        }
+
+        .arrow-repas-container{
+            display: flex;
+            align-items: center;
+
+            .arrow-container{
+                width: 15%;
+                padding: 3%;
+            }
+            .arrow{
+                width: 100%;
+            }
+
+            .repas-card-container{
+                width: 100%;
+                border-radius: 10px;
+                background-color: var(--background-color-plat-recette-card);
+
+                .repas-image-category-container{
+                    position: relative;
+                    img{
+                        width: 100%;
+                        border-radius: 10px;
+                    }            
+                    p{
+                        font-size: 20px;
+                        padding: 1% 5% 1% 5%;
+                        position: absolute;
+                        background: rgba(255, 255, 255, 0.5);
+                        border-radius: 8px;
+                        bottom: 5%;
+                        right: 3%;
+                    }
+                    
+                }
+                .repasname-button-container{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 5% 6%;
+
+                    h2{
+                        color: white;
+                    }
+
+                    button{
+                        font-size: 16px;
+                        padding: 3%;
+                        border-radius: 5px;
+                        background-color: #bf1c05;
+                        color: white;
+                        border-style: none;
+                    }
+                }
+            }
+
+        }
     }
+
+    .lutin-text-container{
+        padding-top: 3%;
+        padding-left:50%; 
+        display: flex;
+        //background-color: violet;
+
+        .image-lutin-container{
+            width: 40%;
+        }
+        .image-lutin{
+            width: 100%;
+        }
+
+        .image-lutin{
+            transform-origin: center bottom;
+            animation: yurayura 2s linear infinite;
+        }
+        
+        @keyframes yurayura {
+          0% , 100%{
+              transform: rotate(10deg);
+          }
+          50%{
+              transform: rotate(-10deg);
+          }
+        }
+
+        .text-container{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 2%;
+
+            p{
+                color: beige;
+                background-color: green;
+                padding: 10% 10%;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .chosen-menu-container{
+        background-color: beige;
+        height: 50%;
+        position: relative;
+
+        .pin-container{
+            width: 10%;
+            position: absolute;
+            top: -15px;
+            right: 50%;
+
+            .pin{
+                width: 100%;
+            }
+        }
+
+        .menu-title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5% 0 5% 0;
+
+            h3{
+                font-size: 50px;
+                font-family: var(--font-family-christmas);
+            }
+        }
+
+        .menu-name-container{
+            padding: 5% 3%;
+            display: flex;
+            justify-content: space-between;
+
+            .left-block{
+                display: flex;
+            }
+
+            .menu-category{
+                margin-left: 5px;
+                padding: 2% 3%;
+                background-color: var(--background-color-plat-menu-list);
+                border-radius: 5px;
+                font-size: 18px;
+            }
+
+            .chosen-menu-name{
+                margin-left: 5px;
+                font-size: 18px;
+                padding: 2% 3%;
+
+            }
+
+        
+        .couvert-icon-container{
+            width: 10%;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .delete-icon-container{
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 100%;
+            }
+
+        }
+        }
+    }
+    .menu-card-icon{
+        width: 30%;
+    }
+
+    
 }
