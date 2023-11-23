@@ -54,7 +54,7 @@ const Home = () => {
       <h1>Noël en un clic</h1>
       <div className="icones">
         <div className="icones-firstline">
-          <NavLink to="Whishlist">
+          <NavLink to="/Whishlist">
             <div
               className="liste"
               onMouseOver={mouseOverWish}
