@@ -1,4 +1,4 @@
-import MoviesData from "./MoviesData"; 
+// import MoviesData from "./MoviesData"; 
 import { NavLink } from 'react-router-dom';
 
 function MovieCalendar () {
@@ -15,6 +15,6 @@ function MovieCalendar () {
 
         
     
-};
+}
 
 export default MovieCalendar; 

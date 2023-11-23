@@ -1,5 +1,5 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+// import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
     return (
@@ -21,7 +21,7 @@ const Home = () => {
             <NavLink to="/moviecalendar"> 
             <div className="calendar">
             <img src="/images/Epice.png" alt="calendar"/>
-                <h2>Mon calendrier de l'avant</h2> 
+                <h2>Mon calendrier de {`l'avant`}</h2> 
             </div>
             </NavLink > 
             </div>

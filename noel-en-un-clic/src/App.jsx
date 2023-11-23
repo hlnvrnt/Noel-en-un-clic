@@ -1,6 +1,6 @@
-import React from "react"
+// import React from "react"
 import { Outlet } from "react-router-dom"
-
+import Wishlist from "./pages/Wishlist";
 
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
 
   return (
     <div>
+		<Wishlist />
       <Outlet />
     </div>
 
