@@ -2,157 +2,157 @@ const menuItemsData = [
     {
         id: 0,  
         name: "Bûche au chocolat",  
-        picture: "buche_chocolat", 
+        picture: "/images/buche_chocolat.jpg", 
         category: "dessert"
     }, 
     {
         id: 1,  
         name: "Pain aux céréales",  
-        picture: "bpain", 
+        picture: "/images/pain.jpg", 
         category: "accompagnement", 
     }, 
     {
         id: 3,  
         name: "Rosé",  
-        picture: "rose", 
+        picture: "/images/rose.jpg", 
         category: "boisson"
     }, 
     {
         id: 4,  
         name: "Verrines sucrées",  
-        picture: "verrines_dessert", 
+        picture: "/images/verrines_dessert.jpg", 
         category: "dessert"
     },
     {
         id: 5,  
         name: "Cake",  
-        picture: "cake", 
+        picture: "/images/cake.jpg", 
         category: "dessert"
     }, 
     {
         id: 6,  
         name: "Cake façon crumble",  
-        picture: "cake_table",  
+        picture: "/images/cake_table.jpg",  
         category: "dessert"
     }, 
     {
         id: 7,  
         name: "Cupcakes au chocolat",  
-        picture: "cupcakes", 
+        picture: "/images/cupcakes.jpg", 
         category: "dessert"
     }, 
     {
         id: 8,  
         name: "Muffins à la crème",  
-        picture: "mussins_creme", 
+        picture: "/images/muffins_creme.jpg", 
         category: "dessert"
     }, 
     {
         id: 9,  
         name: "Cake à la cannelle",  
-        picture: "cake_cinnamon", 
+        picture: "/images/cake_cinnamon.jpg", 
         category: "dessert"
     }, 
     {
         id: 10,  
         name: "Bircuits au pain d'épice",  
-        picture: "cookies_gingerbread", 
+        picture: "/images/cookies_gingerbread.jpg", 
         category: "dessert"
     }, 
     {
         id: 11,  
         name: "Eclairs au chocolat",  
-        picture: "eclairs_chocolat", 
+        picture: "/images/eclairs_chocolat.jpg", 
         category: "dessert"
     }, 
     {
         id: 12,  
         name: "Thé à l'orange",  
-        picture: "the", 
+        picture: "/images/the.jpg", 
         category: "gouter"
     }, 
     {
         id: 13,  
         name: "Cocktails",  
-        picture: "cocktails", 
+        picture: "/images/cocktails.jpg", 
         category: "boisson"
     }, 
     {
         id: 14,  
         name: "Rôti de porc",  
-        picture: "ham", 
+        picture: "/images/ham.jpg", 
         category: "plat"
     }, 
     {
         id: 16,  
         name: "Pop corn",  
-        picture: "popcorn", 
+        picture: "/images/popcorn.jpg", 
         category: "gouter"
     },
     {
         id: 17,  
         name: "marshmallow",  
-        picture: "marshmallow", 
+        picture: "/images/marshmallow.jpg", 
         category: "gouter"
     },  
     {
         id: 18,  
         name: "Pavé de saumon",  
-        picture: "salmon", 
+        picture: "/images/salmon.jpg", 
         category: "plat"
     },  
     {
         id: 19,  
         name: "Pains au chocolat",  
-        picture: "bread-chocolat", 
+        picture: "/images/bread_chocolat.jpg", 
         category: "gouter"
     },  
     {
         id: 20,  
         name: "Chapon farci",  
-        picture: "chapon_farci", 
+        picture: "/images/chapon_farci.jpg", 
         category: "plat"
     },  
     {
         id: 21,  
         name: "Roti de boeuf",  
-        picture: "roti_boeuf", 
+        picture: "/images/roti_boeuf/jpg", 
         category: "plat"
     },  
     {
         id: 22,  
         name: "Verrines sucrées",  
-        picture: "verrines_dessert", 
+        picture: "/images/verrines_dessert.jpg", 
         category: "dessert"
     },  
     {
         id: 23,  
-        name: "pâté en croute",  
-        picture: "pate_croute", 
+        name: "Pâté en croute",  
+        picture: "/images/pate_en_croute.jpg", 
         category: "entree"
     }, 
     {
-        id: 24,  
-        name: "Verrines sucrées",  
-        picture: "verrines_dessert", 
-        category: "dessert"
-    }, 
+        id: 24, 
+        name : "Escargot de Bourgogne", 
+        picture: "/images/escargots.jpg",
+        category: "plat"
+    },
     {
         id: 25,  
         name: "Noix de Saint Jacques",  
-        picture: "noix_saint_jacques", 
+        picture: "/images/noix_saint_jacques.jpg", 
         category: "entree"
     }, 
     {
         id: 26,  
         name: "Fruits de mer",  
-        picture: "fruits_de_mer", 
+        picture: "/images/fruits_de_mer.jpg", 
         category: "entree"
     }, 
     {
         id: 27,  
         name: "Rôti aux asperges",  
-        picture: "aspergus", 
+        picture: "/images/aspergus.jpg", 
         category: "plat"
     },  
 ]
