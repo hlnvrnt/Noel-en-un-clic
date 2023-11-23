@@ -1,13 +1,19 @@
-// import React from "react";
-// import { Outlet } from "react-router-dom";
+// import React from "react"
+import { Outlet } from "react-router-dom"
 import Wishlist from "./pages/Wishlist";
 
+
 function App() {
-	return (
-		<div>
-			{/* <Outlet /> */}
-			<Wishlist />
-		</div>
-	);
+
+
+  return (
+    <div>
+		<Wishlist />
+      <Outlet />
+    </div>
+
+  )
 }
+
+
 export default App;

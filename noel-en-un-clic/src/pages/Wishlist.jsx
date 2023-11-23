@@ -35,7 +35,7 @@ export default function Wishlist() {
 							onChange={(e) => setWishlistItem(e.target.value)}
 						/>
 						<button className="submit" type="submit">
-							<svg
+							<svg className="gift"
 								viewBox="0 0 1024 1024"
 								fill="currentColor"
 								height="1em"
