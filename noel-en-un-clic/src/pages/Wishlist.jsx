@@ -13,7 +13,7 @@ export default function Wishlist() {
 							type="text"
 							placeholder="Écris ici ce que tu souhaites commander"
 						/>
-						<button type="submit">
+						<button className="submit" type="submit">
 							<strong>+</strong>
 						</button>
 					</form>
