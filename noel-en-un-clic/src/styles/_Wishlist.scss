@@ -9,6 +9,7 @@
 		height: 65%;
 
 		.header-wrapper {
+			
 			display: flex;
 			justify-content: center;
 			margin-left: 25%;
@@ -16,7 +17,28 @@
 			width: 50%;
 
 			h1 {
-				font-family: var(--font-family-christmas);
+				font-size: 40px;
+				transition: 0.3s ease;
+			}
+			h1:hover {
+				transform: scale(1.1);
+			}
+			h1:hover::after {
+				transform: scaleX(1);
+			}
+			h1::after {
+				content: "";
+				transform-origin: 0 0;
+				transform: scaleX(0);
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 2px;
+				background: rgb(0, 0, 0);
+				z-index: -1;
+				opacity: 0.8;
+				transition: transform 0.3s;
 			}
 		}
 
@@ -25,36 +47,92 @@
 			justify-content: space-around;
 			align-items: center;
 			height: 50px;
-            width: 60%;
-            padding-left: 5%;
-            padding-top: 10%;
+			width: 60%;
+			padding-left: 5%;
+			padding-top: 10%;
 
 			.input {
+				position: absolute;
 				border-style: none;
 				border: 3px solid #335327;
 				background-color: #497a37;
 				color: var(--color-text);
-				height: 50px;
-				width: 300px;
-				border-radius: 5px;
-				padding-left: 10px;
-
+				height: 45px;
+				width: 360px;
+				border-radius: 10px;
+				padding-left: 15px;
+				font-size: 23px;
 				&::placeholder {
 					color: var(--color-text);
 				}
 			}
 
 			.submit {
+				padding: 2%;
+				position: relative;
 				background-color: #497a37;
-				font-size: calc(var(--font-size-standard) * 1.2);
+				margin-left: 80%;
+				font-size: calc(var(--font-size-standard) * 1.5);
 				color: var(--color-text);
+				font-size: 20px;
 				border-style: none;
-				border: 3px solid #335327;
-				border-radius: 5px;
+				border-radius: 2px;
 				width: 40px;
-				height: 40px;
+				height: 35px;
+				transition: transform 0.5s ease, box-shadow 0.5s ease;
 				cursor: pointer;
 			}
+			.submit:hover {
+				background: linear-gradient(to bottom, #487937 5%, #6ab151 100%);
+				transform: scale(1.1);
+			}
+		}
+		@keyframes scaleIn {
+			from {
+				transform: scale(0.8);
+				opacity: 0;
+			}
+			to {
+				transform: scale(1);
+				opacity: 1;
+			}
+		}
+		.submitted-items {
+			animation: scaleIn 0.8s ease-out;
+			position: absolute;
+			margin-top: 3%;
+			margin-left: 3%;
+			width: 20%;
+			height: 30%;
+
+			li {
+				font-size: 30px;
+
+				list-style-type: none;
+			}
+		}
+
+		.send {
+			position: relative;
+			font-size: 25px;
+			border: 3px solid #a50b0b;
+			background-color: #c50000;
+			margin-left: 65%;
+			margin-top: 35%;
+			height: 45px;
+			width: 160px;
+
+			border-radius: 10px;
+
+			transition: transform 0.5s ease, box-shadow 0.5s ease;
+		}
+		.send:hover {
+			transform: scale(1.1);
+			background: linear-gradient(to bottom, #7c0808 5%, #be1a1a 100%);
+		}
+		a {
+			text-decoration: none;
+			color: var(--color-text);
 		}
 	}
 }

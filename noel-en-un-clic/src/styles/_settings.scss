@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
 * {
+	font-family: "Ephesis", sans-serif;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -12,6 +15,7 @@ body,
 }
 
 body {
+
 	background-image: url("/images/Background_MainPage.png");
 	background-size: cover;
 	background-position: center;
@@ -21,17 +25,11 @@ body {
 	width: 100vw;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
-@font-face {
-	font-family: "christmas and santona";
-	src: local("christmas and santona"),
-		url("../assets/christmas_and_santona/Christmas\ and\ Santona.ttf")
-			format("ttf");
-}
+
 
 :root {
-	--font-family-christmas: "christmas and santona";
-	--font-family: "Crimson Text", serif;
+	--font: "Ephesis", sans-serif;
+	
 	--color-text: white;
 	--color-recette: #3f3c3c;
 	--color-menu: #f2ae00;
