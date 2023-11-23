@@ -1,22 +1,24 @@
 * {
-    box-sizing : border-box;
-    margin :0;
-    padding:0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html, body, :root {
-    min-height: 100vh;
-    overflow-x: hidden;
+html,
+body,
+:root {
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-body{
-    background-image: url("/images/Background_MainPage.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
-    width: 100vw;
+body {
+  background-image: url("/images/Background_MainPage.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
@@ -31,6 +33,7 @@ body{
 :root {
   --font-family-christmas: "christmas and santona";
   --font-family: "Crimson Text", serif;
+  --font-size: 2rem;
   --color-text: white;
   --color-recette: #3f3c3c;
   --color-menu: #f2ae00;
@@ -39,4 +42,3 @@ body{
   --background-color-plat-recette-card: rgba(245, 236, 227, 0.7);
   --background-color-phrases-lutin: #497a37;
 }
-

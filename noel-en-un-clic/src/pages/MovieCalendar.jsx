@@ -1,9 +1,7 @@
 import MoviesData from "./MoviesData"; 
 
 function MovieCalendar () {
-    return (
-        
-    )
+    return 
 };
 
 export default MovieCalendar; 
