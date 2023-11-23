@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
-function HoveringWhishlist() {
+function HoveringWishlist() {
   return (
     <div className="bubble">
       <h2>Ma liste au Père Noël</h2>
@@ -54,7 +54,7 @@ const Home = () => {
       <h1>Noël en un clic</h1>
       <div className="icones">
         <div className="icones-firstline">
-          <NavLink to="/Whishlist">
+          <NavLink to="/Wishlist">
             <div
               className="liste"
               onMouseOver={mouseOverWish}
@@ -62,7 +62,7 @@ const Home = () => {
             >
               <img src="/images/Enveloppe.png" alt="enveloppe" />
             </div>
-            {isHovering && <HoveringWhishlist />}
+            {isHovering && <HoveringWishlist />}
           </NavLink>
 
           <NavLink to="MovieCalendar">
