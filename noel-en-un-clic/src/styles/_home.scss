@@ -1,82 +1,165 @@
-.homepage{
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  h1 {
+    animation: fadeIn 0.8s ease-in;
+    color: var(--color-text);
+    padding-top: 70px;
+    font-family: var(--font-family-christmas);
+    font-size: 6em;
+    text-align: center;
+  }
+
+  h2 {
+    color: var(--color-text);
+    font-family: var(--font-family-christmas);
+    font-size: var(--font-size);
+  }
+
+  .icones {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-height:100vh;
+    gap: 30px;
 
-    .renne{
-        display:flex;
-        justify-content: flex-start;
-        width:100vw;
-        padding-top: 20px;
-        img{
-            height:11vh;
-            width:5vw;
-        }
-    }
-    h1{
-        color : white;
+    a {
+      text-decoration: none;
     }
 
-    h2{
-        color:white;
+    .icones-firstline {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 80vw;
     }
 
-    .icones{
-        display: flex;
-        flex-direction: column;
-        
+    .liste {
+      display: flex;
+      flex-direction: column;
 
-        a{
-            text-decoration: none;
-        }
-
-        .icones-firstline{
-            display: flex; 
-            justify-content: space-around;
-            align-items: center;
-            width:80vw;
-        }
-
-        .liste{
-            display:flex;
-            flex-direction: column;
-
-            img{
-                height:10vh;
-                width:15vh;
-                margin-bottom: 30px;
-            }
-        }
-
-        .calendar{
-            display:flex;
-            flex-direction: column;
-            img{
-                height:30vh;
-                width:30vh;
-            }
-        }
-
-        .lutin{
-            width:80vw;
-            display: flex;
-            justify-content: center;
-
-            img{
-                height: 10vh;
-            }
-        }
-        .menus{
-            display:flex;
-            flex-direction: column;
-            width:80vw;
-            align-items: center;
-
-            img{
-                height:20vh;
-                width:20vh;
-            }
-        }
+      img {
+        rotate: -30deg;
+        height: 15vh;
+        width: 20vh;
+        margin-bottom: 30px;
+        animation-name: slideIn;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+      }
     }
+    @keyframes slideIn {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    .bubble {
+      border: 1px solid var(--background-color-phrases-lutin);
+      border-radius: 10px;
+      padding: 12px;
+      background-color: var(--background-color-phrases-lutin);
+      position: absolute;
+      left: 28%;
+      color: white;
+    }
+
+    .bubble-calendar {
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid var(--background-color-phrases-lutin);
+      border-radius: 10px;
+      padding: 12px;
+      background-color: var(--background-color-phrases-lutin);
+      position: absolute;
+      right: 25%;
+      bottom: 33%;
+
+      h2 {
+        text-align: center;
+      }
+    }
+    .bubble-recipe {
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid var(--background-color-phrases-lutin);
+      border-radius: 10px;
+      padding: 12px;
+      background-color: var(--background-color-phrases-lutin);
+      position: absolute;
+      right: 30%;
+      bottom: 20%;
+    }
+    .calendar {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        animation-name: slideIn;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        margin-left: 15%;
+        rotate: 30deg;
+        height: 40vh;
+        width: 40vh;
+      }
+    }
+    @keyframes yurayura {
+      0%,
+      100% {
+        transform: rotate(10deg);
+      }
+      50% {
+        transform: rotate(-10deg);
+      }
+    }
+    .lutin {
+      width: 80vw;
+      display: flex;
+      justify-content: center;
+
+      img {
+        transform-origin: center bottom;
+        animation: yurayura 2s linear infinite;
+        height: 25vh;
+
+        position: absolute;
+        top: 40%;
+        right: 45%;
+
+        z-index: -1;
+      }
+    }
+    .menus {
+      display: flex;
+      flex-direction: column;
+      width: 80vw;
+      align-items: center;
+      margin-top: 70px;
+      img {
+        animation-name: slideIn;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        height: 30vh;
+        width: 30vh;
+      }
+    }
+  }
 }

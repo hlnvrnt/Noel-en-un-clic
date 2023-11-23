@@ -2,6 +2,7 @@
 import { NavLink } from 'react-router-dom';
 
 function MovieCalendar () {
+
     return (
 
         <div>
@@ -16,5 +17,6 @@ function MovieCalendar () {
         
     
 }
+
 
 export default MovieCalendar; 
