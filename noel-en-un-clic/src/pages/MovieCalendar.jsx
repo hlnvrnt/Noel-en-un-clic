@@ -11,7 +11,7 @@ function MovieCalendar() {
         </div>
         </NavLink>
         <div className="main-contenu">
-          <h1>Calendrier de l'Avent</h1>
+          <h1>Calendrier de {`l'Avent`}</h1>
       <div className="calendar-container">
         {MoviesData.map((movie) => (
           <CalendarCard
