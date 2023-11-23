@@ -1,0 +1,59 @@
+.movieCalendar {
+    padding-top: 4%;
+    width: 100%; 
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center; 
+
+    h1{
+        color: var(--color-text);
+        font-family: var(--font-family-christmas);
+    }
+
+    .calendar-container {
+        background-image: url('/images/background_all_cards.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-color: #F3CA3A;
+        border-style: solid;
+        border-radius: 5px;
+        display:flex;
+        padding-left: 22px;
+        justify-content:flex-start; 
+        flex-wrap: wrap;
+        height:82vh;
+        width: 60%; 
+
+    }
+
+    .penguin {
+        width: 25px;
+        height: 45px;
+        bottom: 85%;
+        position: fixed;
+        animation: walk 40s linear infinite;
+      }
+      
+      @keyframes walk {
+        0%, 100% { 
+          left: 0;    
+          transform: translatex(-50%) scalex(-1); 
+        }
+         49% { 
+          left: 100%; 
+          transform: translatex(-50%) scalex(-1); 
+        }
+          50% { 
+           left: 100%; 
+           transform: translatex(-50%) scalex(1);  
+        }
+           99% { 
+            left: 0;   
+            transform: translatex(-50%) scalex(1);      }
+      }
+    
+}
