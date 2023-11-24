@@ -7,6 +7,7 @@ import Home from "./components/Home.jsx";
 import MovieCalendar from "./pages/MovieCalendar.jsx";
 import Wishlist from "./pages/Wishlist.jsx";
 import Menu from "./pages/Menu.jsx";
+import SendLetter from "./pages/SendLetter.jsx";
 
 
 const router = createBrowserRouter(
@@ -26,6 +27,11 @@ const router = createBrowserRouter(
         {
           path: "wishlist",
           element: <Wishlist />,
+        },
+
+        {
+          path: "sendletter",
+          element: <SendLetter />,
         },
         {
           path: "menu",

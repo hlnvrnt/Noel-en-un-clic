@@ -1,11 +1,11 @@
-.renne{
-	display:flex;
+.renne {
+	display: flex;
 	justify-content: flex-start;
-	width:100vw;
+	width: 100vw;
 	padding-top: 20px;
-	img{
-		height:11vh;
-		width:5vw;
+	img {
+		height: 11vh;
+		width: 5vw;
 	}
 }
 
@@ -16,20 +16,22 @@
 	align-items: center;
 
 	.Letter-wrapper {
-		background-image: url("/images/letter.png");
+		animation: pop-in 0.5s;
+		background-image: url("/images/Letters.png");
 		width: 46%;
 		height: 65%;
 
 		.header-wrapper {
-			
 			display: flex;
 			justify-content: center;
 			margin-left: 25%;
-			margin-top: 8%;
 			width: 50%;
 
 			h1 {
-				font-size: 40px;
+				color: white;
+				margin-top: -20%;
+				margin-bottom: 45%;
+				font-size: 45px;
 				transition: 0.3s ease;
 			}
 			h1:hover {
@@ -59,9 +61,9 @@
 			justify-content: space-around;
 			align-items: center;
 			height: 50px;
-			width: 60%;
-			padding-left: 5%;
-			padding-top: 10%;
+			width: 50%;
+			padding-left: 6%;
+			padding-top: 20%;
 
 			.input {
 				position: absolute;
@@ -70,10 +72,10 @@
 				background-color: #497a37;
 				color: var(--color-text);
 				height: 45px;
-				width: 360px;
+				width: 300px;
 				border-radius: 10px;
 				padding-left: 15px;
-				font-size: 23px;
+				font-size: 20px;
 				&::placeholder {
 					color: var(--color-text);
 				}
@@ -83,13 +85,13 @@
 				padding: 2%;
 				position: relative;
 				background-color: #497a37;
-				margin-left: 80%;
+				margin-left: 82%;
 				font-size: calc(var(--font-size-standard) * 1.5);
 				color: var(--color-text);
 				font-size: 20px;
 				border-style: none;
 				border-radius: 2px;
-				width: 40px;
+				width: 30px;
 				height: 35px;
 				transition: transform 0.5s ease, box-shadow 0.5s ease;
 				cursor: pointer;
@@ -107,6 +109,16 @@
 			to {
 				transform: scale(1);
 				opacity: 1;
+			}
+		}
+		@keyframes pop-in {
+			0% {
+				opacity: 0;
+				transform: scale(0.1);
+			}
+			100% {
+				opacity: 1;
+				transform: scale(1);
 			}
 		}
 		.submitted-items {
@@ -129,8 +141,8 @@
 			font-size: 25px;
 			border: 3px solid #a50b0b;
 			background-color: #c50000;
-			margin-left: 65%;
-			margin-top: 35%;
+			margin-left: 70%;
+			margin-top: 20%;
 			height: 45px;
 			width: 160px;
 
