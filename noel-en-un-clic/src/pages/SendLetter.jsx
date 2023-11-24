@@ -16,7 +16,7 @@ export default function SendLetter() {
 				
 			
 			<div className="confirmation-wrapper">
-				<img src="/images/Lutin.png" alt="lutin" />
+				<img src="/images/Boite.png" alt="boite" />
 				<div className="confirmation-text">
 					<p>
 						Merci pour cette merveilleuse liste !<br></br>
