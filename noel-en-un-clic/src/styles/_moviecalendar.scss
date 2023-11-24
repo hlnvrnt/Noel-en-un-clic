@@ -20,12 +20,42 @@
 		}
 	}
 
+<<<<<<< HEAD
+    .main-contenu {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    h1{
+        color: var(--color-text);
+        font-size: 2.5rem;
+    }
+
+    .calendar-container {
+        background-image: url('/images/background_all_cards.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-color: #F3CA3A;
+        border-style: solid;
+        border-radius: 5px;
+        display:flex;
+        padding-left: 22px;
+        justify-content:flex-start; 
+        flex-wrap: wrap;
+        height:79vh;
+        width: 60%; 
+=======
 	.renne {
 		height: 0vh;
 	}
 
 	img {
 		position: relative;
+>>>>>>> 747bc09533817e4ac4508d9bb7ca4a855b58fb89
 
 		cursor: pointer;
 		transition: transform 0.5s ease, box-shadow 0.5s ease;
@@ -34,6 +64,35 @@
 		transform: scale(1.1);
 	}
 
+<<<<<<< HEAD
+    .penguin {
+        width: 25px;
+        height: 45px;
+        bottom: 80%;
+        position: fixed;
+        animation: walk 40s linear infinite;
+      }
+      
+      @keyframes walk {
+        0%, 100% { 
+          left: 0;    
+          transform: translatex(-50%) scalex(-1); 
+        }
+         49% { 
+          left: 100%; 
+          transform: translatex(-50%) scalex(-1); 
+        }
+          50% { 
+           left: 100%; 
+           transform: translatex(-50%) scalex(1);  
+        }
+           99% { 
+            left: 0;   
+            transform: translatex(-50%) scalex(1);      }
+      }
+    
+}
+=======
 	.main-contenu {
 		width: 100vw;
 		height: 100vh;
@@ -91,3 +150,4 @@
 		}
 	}
 }
+>>>>>>> 747bc09533817e4ac4508d9bb7ca4a855b58fb89

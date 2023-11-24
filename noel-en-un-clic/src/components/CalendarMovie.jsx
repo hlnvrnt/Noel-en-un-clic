@@ -1,5 +1,3 @@
-import React from 'react';
-
 const CalendarMovie = ({image, handleFlip}) => {
     return (
         <div onClick={handleFlip} className='calendarMovie'>
