@@ -5,7 +5,7 @@ import { FaArrowCircleLeft } from "react-icons/fa";
 import { FaTrash } from "react-icons/fa";
 import  menuItemsData  from "./MenuItempsData";
 
-import GenericPdfdownloader from "./GenericPdfdownloader";
+import GenericPdfdownloader from "./GenericPdfdownLoader";
 
 function HoveringReturnHome() {
 	return (
