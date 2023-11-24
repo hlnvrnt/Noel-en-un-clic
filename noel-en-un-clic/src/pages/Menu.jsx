@@ -5,6 +5,9 @@ import { FaArrowCircleLeft } from "react-icons/fa";
 import { FaTrash } from "react-icons/fa";
 import  menuItemsData  from "./MenuItempsData";
 
+import GenericPdfDownloader from "./GenericPdfDownloader";
+
+
 function Menu(){
     const [menus, setMenus] = useState([]);
     const [recetteIndex, setRecetteIndex] = useState(0);
@@ -40,6 +43,12 @@ function Menu(){
         <>
         <body>
             <NavLink to="/">
+            <GenericPdfDownloader 
+          downloadFileName="CustomPdf" 
+          rootElementId="testId" 
+        />
+        
+       
             <div className="renne">
             <img src="/images/reindeer.png" alt="rennes" />
             </div>
@@ -83,7 +92,7 @@ function Menu(){
                     </div>
                 </div>
                 </div>
-                <div className="chosen-menu-container">
+                <div className="chosen-menu-container" id="testId">
                     <div className="pin-container">
                         <img src="../../public/page_menu/pin.png" className="pin" alt="icon-pin" />
                     </div>
@@ -126,6 +135,7 @@ function Menu(){
                 </div>
                 
             </div>
+           
         </body>
         </>
     );
