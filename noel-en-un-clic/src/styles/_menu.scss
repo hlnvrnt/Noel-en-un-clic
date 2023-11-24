@@ -1,8 +1,314 @@
 .menu-container{
-    background-color: red;
+    padding: 0% 2% 15% 2%;
+    width: 70vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    
 
+    .menu-card-container{
 
-    .menu-card-icon{
-        width: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        //background-color: white;
+
+        h1{
+            font-size: 50px;
+            padding-bottom: 5%;
+            color: var(--color-text);
+        }
+
+        .arrow-repas-container{
+            display: flex;
+            align-items: center;
+
+            .arrow-container{
+                width: 15%;
+                padding: 0%;
+
+                button{
+                    background: none;
+                    border: none;
+                }
+            }
+            .arrow{
+                width: 100%;
+                font-size: 38px;
+                color: #FAFDF3; 
+                padding-left: 10px;
+                padding-right: 10px;
+                
+                &:hover{
+                    color: #a5a58b;
+                    cursor: pointer;
+                }
+            }
+    
+
+            .repas-card-container{
+                width: 100%;
+                border-radius: 10px;
+                padding-bottom: 1%;
+                background-color: var(--background-color-plat-recette-card);
+
+                .repas-image-category-container{
+                    position: relative;
+                    width: 400px;
+
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+                        height: 240px;
+                        border-radius: 10px 10px 0 0;
+
+                    }            
+                    p{
+                        font-size: 18px;
+                        padding: 1% 5% 1% 5%;
+                        position: absolute;
+                        background: rgba(255, 255, 255, 0.7);
+                        border-radius: 8px;
+                        bottom: 5%;
+                        right: 3%;
+                    }
+                    
+                }
+                .repasname-button-container{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 5% 6% 2% 5%;
+
+                    p{
+                        color: 3F3C3C;
+                        font-size: 30px;
+                    }
+
+                   
+
+                    button{
+                        font-size: 16px;
+                        padding: 3%;
+                        border-radius: 5px;
+                        background-color: #bf1c05;
+                        color: white;
+                        border-style: none;
+                        transition: transform 0.5s ease, box-shadow 0.5s ease;
+                        &:hover{
+                            transform: scale(1.1);
+                            background: linear-gradient(to bottom, #bf1c05 5%, #bf1c05 100%);
+                            cursor: pointer;
+                        }
+                    }   
+                }.warning{
+                    display:flex;
+                    padding: 0 4% 1% 4%;
+                    color: #bf1c05;
+                    justify-content: flex-end;
+                    font-weight: bold;
+                    
+                }
+
+                .hide-warning{
+                    display: none;
+                }
+            }
+
+        }
     }
+
+    .lutin-text-container{
+        padding-top: 8%;
+        padding-left:26%; 
+        display: flex;
+        //background-color: violet;
+
+        .image-lutin-container{
+            width: 20%;
+        }
+        .image-lutin{
+            width: 100%;
+        }
+
+        .image-lutin{
+            transform-origin: center bottom;
+            animation: yurayura 2s linear infinite;
+        }
+        
+        @keyframes yurayura {
+          0% , 100%{
+              transform: rotate(10deg);
+          }
+          50%{
+              transform: rotate(-10deg);
+          }
+        }
+
+        .text-container{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 2%;
+
+            p{
+                color: beige;
+                background-color: green;
+                border-radius: 10px;
+                padding: 10% 10%;
+                font-size: 22px;
+                font-family: var(--font-family);
+            }
+        }
+    }
+
+    .chosen-menu-container{
+        background-color: beige;
+        height: 80vh;
+        position: relative;
+        padding: 0 10px;
+
+        .pin-container{
+            width: 12%;
+            position: absolute;
+            top: -15px;
+            right: 40%;
+
+            .pin{
+                width: 100%;
+            }
+        }
+
+        .menu-title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8% 0 5% 0;
+
+            img{
+                width: 30px;
+            }
+
+            h3{
+                font-size: 42px;
+                padding-left: 10px;
+                font-family: var(--font-family-christmas);
+            }
+        }
+
+        .menu-name-container{
+            padding: 6% 0;
+            display: flex;
+            justify-content: space-between;
+            height: 20%;
+            
+
+            .left-block{
+                display: flex;    
+            }
+
+            .menu-category{
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 12px 0 12px;
+                padding: 2% 5%;
+                background-color: var(--background-color-plat-menu-list);
+                border-radius: 5px;
+                font-size: 16px;
+            }
+
+            .plat{
+                background-color: white;
+            }
+            
+            .dessert{
+                background-color: #f7dbd6;
+            }
+
+            .boisson{
+                background-color: #f9ef94;
+            }
+
+            .gouter{
+                background-color: #e39632;
+            }
+
+            .chosen-menu-image{
+                width: 10vw;
+               // height: 100%;
+                
+
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    
+                    
+                }
+            }
+
+            .chosen-category-name-container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 160px; 
+            }
+
+            .chosen-menu-name{
+                //margin-left: 5px;
+                text-align: center;
+                font-size: 16px;
+               padding: 2% 3%;
+            }
+
+        .delete-icon-container{
+            width: 30px;
+            margin-left: 7px;   
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button{
+                background: none;
+                border: none;
+            }
+            
+            .icon-delete{
+                width: 70%;
+                padding-right: 4px;
+                font-size: 30px;
+                color: #a5a58b;  
+                &:hover{
+                    color: gray;
+                    cursor: pointer;
+                }
+            }
+
+        }
+        }
+    }    
+    
+}
+
+.style-button-pdf{
+    margin-left: 20px;
+    display: flex;
+    color: white;
+    font-size:12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: none; 
+    padding: 20% 20%;
+    background-color: #bf1c05;
+    border-radius: 5px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+        &:hover{
+            transform: scale(1.1);
+            background: linear-gradient(to bottom, #bf1c05 5%, #bf1c05 100%);
+            cursor: pointer;
+        }
 }

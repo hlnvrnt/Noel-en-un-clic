@@ -12,11 +12,12 @@ body,
 :root {
 	min-height: 100vh;
 	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 body {
 
-	background-image: url("/images/background.png");
+	background-image: url("/images/Background_MainPage.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -38,3 +39,4 @@ body {
 	--background-color-plat-recette-card: rgba(245, 236, 227, 0.7);
 	--background-color-phrases-lutin: #497a37;
 }
+

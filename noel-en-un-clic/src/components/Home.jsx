@@ -49,6 +49,14 @@ const Home = () => {
     setIsHoveringRecipe(false);
   };
 
+  let audio = new Audio("/Xmas Bells - QuickSounds.com.mp3")
+
+  const start = () => {
+    audio.play()
+  }
+
+
+
   return (
     <div className="homepage">
       <h1>Noël en un clic</h1>
@@ -59,6 +67,7 @@ const Home = () => {
               className="liste"
               onMouseOver={mouseOverWish}
               onMouseOut={mouseOutWish}
+              onClick={start}
             >
               <img src="/images/Enveloppe.png" alt="enveloppe" />
             </div>
@@ -70,6 +79,7 @@ const Home = () => {
               className="calendar"
               onMouseOver={mouseOverMovie}
               onMouseOut={mouseOutMovie}
+              onClick={start}
             >
               <img src="/images/Epice.png" alt="calendar" />
             </div>
@@ -79,11 +89,12 @@ const Home = () => {
         <div className="lutin">
           <img src="/images/Lutin.png" alt="lutin" />
         </div>
-        <NavLink to="">
+        <NavLink to="/menu">
           <div
             className="menus"
             onMouseOver={mouseOverRecipe}
             onMouseOut={mouseOutRecipe}
+            onClick={start}
           >
             <img src="/images/Dnde.png" alt="dinde" />
           </div>

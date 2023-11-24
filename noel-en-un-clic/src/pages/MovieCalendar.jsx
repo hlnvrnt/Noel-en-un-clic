@@ -67,8 +67,8 @@ function MovieCalendar() {
         ))}
       </div>
       <div className="penguin">
-  <img src="https://nervin.net/img/ping.gif" />
-</div>
+      <img src="https://nervin.net/img/ping.gif" />
+      </div>
         </div>
       
     </div>
