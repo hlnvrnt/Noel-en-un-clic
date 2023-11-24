@@ -7,12 +7,29 @@ import  menuItemsData  from "./MenuItempsData";
 
 import GenericPdfDownloader from "./GenericPdfDownloader";
 
+function HoveringReturnHome() {
+	return (
+		<div className="reindeer-text">
+		<p>Retour au Menu</p>
+	</div>
+	);
+  }
 
 function Menu(){
     const [menus, setMenus] = useState([]);
     const [recetteIndex, setRecetteIndex] = useState(0);
     const [doubledMenu, setDoubledMenu] = useState("hide-warning");
    
+    const [isHovering, setIsHovering] = useState(false);
+
+	const mouseOverHome = () => {
+		setIsHovering(true);
+	  };
+	
+	  const mouseOutHome = () => {
+		setIsHovering(false);
+	  };
+
     const handleClick = () => {
         let stateMenu = [...menus];
         function checkId(element){
@@ -40,14 +57,61 @@ function Menu(){
     return(
         <>
         <body>
+        <ul className="lightrope">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
             <NavLink to="/">
-                <div className="renne">
+                <div className="renne" onMouseOver={mouseOverHome}
+              onMouseOut={mouseOutHome}>
                     <img src="/images/reindeer.png" alt="rennes" />
                 </div>
+                {isHovering && <HoveringReturnHome />}
             </NavLink>
             <div className="menu-container">
                 <div className="menu-card-container">
-                    <h1>Recettes de noël</h1>
+                    <h1>Recettes de Noël</h1>
                     <div className="arrow-repas-container">
                         <div className="arrow-container">
                             <button type="submit" onClick={()=> setRecetteIndex(recetteIndex-1)}>
@@ -65,7 +129,7 @@ function Menu(){
                                 <button type="submit" onClick={handleClick} >Ajouter au menu</button>
                             </div>
                             <div className={doubledMenu}>
-                                <p>⚠️ Il est déja dans le menu</p>
+                                <p>Tu l'as déjà choisi 😉</p>
                             </div>
                         </div>
                         <div className="arrow-container">
