@@ -89,7 +89,7 @@ const Home = () => {
         <div className="lutin">
           <img src="/images/Lutin.png" alt="lutin" />
         </div>
-        <NavLink to="">
+        <NavLink to="/menu">
           <div
             className="menus"
             onMouseOver={mouseOverRecipe}

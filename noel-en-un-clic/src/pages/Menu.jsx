@@ -1,46 +1,133 @@
 import { NavLink } from 'react-router-dom';
+import { useState } from "react";
+import { FaArrowCircleRight } from "react-icons/fa";
+import { FaArrowCircleLeft } from "react-icons/fa";
+import { FaTrash } from "react-icons/fa";
+import  menuItemsData  from "./MenuItempsData";
+
+import GenericPdfDownloader from "./GenericPdfDownloader";
 
 
 function Menu(){
+    const [menus, setMenus] = useState([]);
+    const [recetteIndex, setRecetteIndex] = useState(0);
+    const [doubledMenu, setDoubledMenu] = useState("hide-warning");
+   
+    const handleClick = () => {
+        let stateMenu = [...menus];
+        function checkId(element){
+            return element.id == menuItemsData[recetteIndex].id;
+        }
+        if(stateMenu.some(checkId)){
+            setDoubledMenu("warning");
+        } else{
+            setMenus([...menus, menuItemsData[recetteIndex]]);
+            setDoubledMenu("hide-warning")
+        }
+        //console.log(stateMenu.some(checkId));
+    }
+
+    const handleDelete = (index) => {
+        let stateMenu = [...menus];
+        let reducedMenu = stateMenu.filter((menu, menuIndex) => {
+            return menuIndex !== index;
+        })
+        setMenus(reducedMenu); 
+    }
+
+   
 
     return(
         <>
-        <NavLink to="/">
-        <div className="renne">
-        <img src="/images/reindeer.png" alt="rennes" />
-        </div>
-        </NavLink>
-        <div className="menu-container">
-            <div className="lutin-container">
-                <img src="../../public/page_menu/before.png" className="menu-card-icon" alt="icon-before" />
-                <p>Miam !Qu’il y aura t’il au menu ?</p>
-
-            </div>
-            <div className="menu-card-container">
-                <h1>Recettes de noël</h1>
-                <img src="../../public/page_menu/before.png" className="menu-card-icon" alt="icon-before" />
-                <div className="repas-card-container">
-                    <div className="repas-category">
-                        <img src="../../public/page_menu/dinde.jpeg" className="menu-card-icon" alt="recette-image" />
-                        <p>Plat</p>
+        <body>
+            <NavLink to="/">
+                <div className="renne">
+                    <img src="/images/reindeer.png" alt="rennes" />
+                </div>
+            </NavLink>
+            <div className="menu-container">
+                <div className="menu-card-container">
+                    <h1>Recettes de noël</h1>
+                    <div className="arrow-repas-container">
+                        <div className="arrow-container">
+                            <button type="submit" onClick={()=> setRecetteIndex(recetteIndex-1)}>
+                                <FaArrowCircleLeft className="arrow"/>
+                            {/*<img src="../../public/page_menu/before.png" className="arrow" alt="icon-before" />*/}
+                            </button>
+                        </div>
+                        <div className="repas-card-container">
+                            <div className="repas-image-category-container">
+                                <img src={menuItemsData[recetteIndex].picture} className="menu-card-icon" alt="recette-image" />
+                                    <p>{menuItemsData[recetteIndex].category}</p>
+                            </div>
+                            <div className="repasname-button-container">
+                                <p>{menuItemsData[recetteIndex].name}</p>
+                                <button type="submit" onClick={handleClick} >Ajouter au menu</button>
+                            </div>
+                            <div className={doubledMenu}>
+                                <p>⚠️ Il est déja dans le menu</p>
+                            </div>
+                        </div>
+                        <div className="arrow-container">
+                            <button type="submit" onClick={() => setRecetteIndex(recetteIndex+1)}>
+                                <FaArrowCircleRight className="arrow"/>
+                            </button>
+                            {/*<img src="../../public/page_menu/next.png" className="arrow" alt="icon-next" /> */}
+                        </div>
+                   </div>
+                   <div className="lutin-text-container">
+                    <div className="image-lutin-container">
+                        <img src="../../public/page_menu/lutin_white.png" className="image-lutin" alt="image-lutin" />
                     </div>
-                    <h2>Nom de repas</h2>
-                    <button>Ajouter au menu</button>
+                    <div className="text-container">
+                        <p>Miam !Qu’il y aura t’il au menu ?</p>
+                    </div>
                 </div>
-                <img src="../../public/page_menu/next.png" className="menu-card-icon" alt="icon-next" />
-            </div>
-            <div className="chosen-menu-container">
-                <img src="../../public/page_menu/pin.png" className="menu-card-icon" alt="icon-pin" />
-                <h3>menu</h3>
-                <img src="../../public/page_menu/couvertatable.png" className="menu-card-icon" alt="menu-couvert" />
-                <div className="menu-category">
-                    Plat
                 </div>
-                <p>Dinde de Noel</p>
-                <img src="../../public/page_menu/delete.png" className="menu-card-icon" alt="icon-delete" />
+                <div className="chosen-menu-container" id="testId">
+                    <div className="pin-container">
+                        <img src="../../public/page_menu/pin.png" className="pin" alt="icon-pin" />
+                    </div>
+                    <div className="menu-title">
+                        <img src="../../public/page_menu/couvertatable.png" alt="couvert-icon" />
+                        <h3>Menu</h3>
+                        <div className="button-pdf">
+                        <GenericPdfDownloader 
+                            downloadFileName="menu de noël " 
+                            rootElementId="testId"
+                        />  
+                    </div>
+                    </div>
 
-            </div>
-        </div>
+                    {menus.map((menu, index)=> {
+                        return(
+                        // eslint-disable-next-line react/jsx-key
+                        <div className="menu-name-container">
+                            <div className="left-block">
+                                <div className="chosen-category-name-container">
+                                    <div className={`menu-category  ${menu.category}`}>
+                                        {menu.category}
+                                    </div>
+                                    <div className="chosen-menu-name">
+                                            <p>{menu.name}</p>
+                                    </div>
+                                </div>                                    
+                                <div className="chosen-menu-image">
+                                    <img src={menu.picture} className="menu-card-icon" alt="recette-image" />
+                                </div>
+                            </div>
+                        <div className="delete-icon-container">
+                            <button onClick={()=> handleDelete(index)}>
+                            <FaTrash className="icon-delete"/>
+                            </button>
+                            {/*<img src="../../public/page_menu/delete.png" className="menu-card-icon" alt="icon-delete" />*/}
+                        </div>
+                    </div>)
+                    })}
+                    </div>
+                    </div>
+                    
+        </body>
         </>
     );
 }
