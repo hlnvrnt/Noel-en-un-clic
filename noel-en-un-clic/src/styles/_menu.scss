@@ -83,7 +83,7 @@
 
                     p{
                         color: 3F3C3C;
-                        font-size: 22px;
+                        font-size: 30px;
                     }
 
                    
@@ -108,6 +108,7 @@
                     color: #bf1c05;
                     justify-content: flex-end;
                     font-weight: bold;
+                    
                 }
 
                 .hide-warning{
@@ -156,7 +157,7 @@
                 background-color: green;
                 border-radius: 10px;
                 padding: 10% 10%;
-                font-size: 20px;
+                font-size: 22px;
                 font-family: var(--font-family);
             }
         }
@@ -190,7 +191,7 @@
             }
 
             h3{
-                font-size: 36px;
+                font-size: 42px;
                 padding-left: 10px;
                 font-family: var(--font-family-christmas);
             }
@@ -295,11 +296,12 @@
 }
 
 .style-button-pdf{
-    margin-left: 10px;
+    margin-left: 20px;
     display: flex;
     color: white;
-    font-size: 14px;
-    border: none;
+    font-size:12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: none; 
     padding: 20% 20%;
     background-color: #bf1c05;
     border-radius: 5px;

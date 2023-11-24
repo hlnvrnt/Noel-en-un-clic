@@ -90,7 +90,7 @@ function Menu(){
                     </div>
                     <div className="menu-title">
                         <img src="../../public/page_menu/couvertatable.png" alt="couvert-icon" />
-                        <h3>menu</h3>
+                        <h3>Menu</h3>
                         <div className="button-pdf">
                         <GenericPdfDownloader 
                             downloadFileName="menu de noël " 
