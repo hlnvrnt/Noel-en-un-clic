@@ -1,0 +1,103 @@
+@keyframes yurayura {
+	0%,
+	100% {
+		transform: rotate(10deg);
+	}
+	50% {
+		transform: rotate(-10deg);
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(0px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes scaleIn {
+	from {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+@keyframes pop-in {
+	0% {
+		opacity: 0;
+		transform: scale(0.1);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.reindeer img {
+	animation: pop-in 0.5s;
+	margin-top: 5%;
+	margin-left: 5%;
+	width: 6vw;
+	height: 12vh;
+	cursor: pointer;
+	transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.reindeer img:hover {
+	transform: scale(1.1);
+}
+.reindeer-text {
+	border: 3px solid #989b0f;
+	background-color: #497a37;
+	border-radius: 10px;
+	text-align: center;
+	margin-left: 3%;
+	width: 13%;
+	height: 6%;
+	position: absolute;
+	top:25%;
+    left:-1%;
+
+	p {
+		color: white;
+		font-size: 30px;
+	}
+}
+
+.confirmation-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column-reverse;
+	width: 100vw;
+	height: 50vh;
+
+	img {
+		
+		width: 35vw;
+		height: 60vh;
+		
+	}
+
+	.confirmation-text {
+		animation: fadeIn 0.8s ease-in-out;
+		border: 3px solid #335327;
+		background-color: #497a37;
+		padding: 20px;
+		border-radius: 10px;
+
+		width: 55vw;
+		height: 35vh;
+
+		p {
+			text-align: center;
+			font-size: 50px;
+			color: white;
+		}
+	}
+}
