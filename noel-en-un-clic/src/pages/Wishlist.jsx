@@ -29,13 +29,13 @@ export default function Wishlist() {
 	return (
 		<>
 			<div className="background-wishlist">
-				<div className="lutin-text">
+				{/* <div className="lutin-text">
 					<p>Que vas-tu commander au Père Noël cette année ?</p>
 				
 				<div className="lutin-wrapper">
 					<img src="/images/Lutin.png"/>
 				</div>
-				</div>
+				</div> */}
 				<div className="Letter-wrapper">
 					<div className="header-wrapper">
 						<h1>Ma liste au Père Noël</h1>
