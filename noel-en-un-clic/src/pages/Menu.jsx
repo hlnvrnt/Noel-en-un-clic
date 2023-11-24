@@ -8,13 +8,22 @@ import  menuItemsData  from "./MenuItempsData";
 function Menu(){
     const [menus, setMenus] = useState([]);
     const [recetteIndex, setRecetteIndex] = useState(0);
-    const [categoryClass, setCategoryClass] = useState("");
+    const [doubledMenu, setDoubledMenu] = useState("hide-warning");
+   
     
 
     const handleClick = () => {
-        //setMenus([...setMenus, recetteIndex]);
-        setMenus([...menus, menuItemsData[recetteIndex]]);
-        console.log(menus)
+        let stateMenu = [...menus];
+        function checkId(element){
+            return element.id == menuItemsData[recetteIndex].id;
+        }
+        if(stateMenu.some(checkId)){
+            setDoubledMenu("warning");
+        } else{
+            setMenus([...menus, menuItemsData[recetteIndex]]);
+            setDoubledMenu("hide-warning")
+        }
+        //console.log(stateMenu.some(checkId));
     }
 
     const handleDelete = (index) => {
@@ -53,6 +62,9 @@ function Menu(){
                             <div className="repasname-button-container">
                                 <p>{menuItemsData[recetteIndex].name}</p>
                                 <button type="submit" onClick={handleClick} >Ajouter au menu</button>
+                            </div>
+                            <div className={doubledMenu}>
+                                <p>⚠️ Il est déja dans le menu</p>
                             </div>
                         </div>
                         <div className="arrow-container">

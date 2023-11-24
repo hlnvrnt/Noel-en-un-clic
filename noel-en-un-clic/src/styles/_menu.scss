@@ -50,6 +50,7 @@
             .repas-card-container{
                 width: 100%;
                 border-radius: 10px;
+                padding-bottom: 1%;
                 background-color: var(--background-color-plat-recette-card);
 
                 .repas-image-category-container{
@@ -78,12 +79,14 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    padding: 5% 6%;
+                    padding: 5% 6% 2% 5%;
 
                     p{
                         color: 3F3C3C;
                         font-size: 22px;
                     }
+
+                   
 
                     button{
                         font-size: 16px;
@@ -98,7 +101,17 @@
                             background: linear-gradient(to bottom, #bf1c05 5%, #bf1c05 100%);
                             cursor: pointer;
                         }
-                    }
+                    }   
+                }.warning{
+                    display:flex;
+                    padding: 0 4% 1% 4%;
+                    color: #bf1c05;
+                    justify-content: flex-end;
+                    font-weight: bold;
+                }
+
+                .hide-warning{
+                    display: none;
                 }
             }
 
@@ -218,7 +231,7 @@
             }
 
             .gouter{
-                background-color: #c78329;
+                background-color: #e39632;
             }
 
             .chosen-menu-image{
