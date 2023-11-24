@@ -29,6 +29,50 @@ export default function Wishlist() {
 	return (
 		<>
 			<div className="background-wishlist">
+			<ul className="lightrope">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
 				{/* <div className="lutin-text">
 					<p>Que vas-tu commander au Père Noël cette année ?</p>
 				
@@ -76,7 +120,7 @@ export default function Wishlist() {
 						<NavLink to="/sendletter">
 							<p>
 								
-								<strong onClick={start}>Envoyer 🎅🏻</strong>
+								<p onClick={start}>Envoyer 🎅🏻</p>
 							</p>
 						</NavLink>
 					</button>

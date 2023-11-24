@@ -1,8 +1,27 @@
 import MoviesData from "./MoviesData";
 import { NavLink } from "react-router-dom";
 import CalendarCard from "../components/CalendarCard";
+import { useState } from "react";
+
+function HoveringReturnHome() {
+	return (
+		<div className="reindeer-text">
+		<p>Retour au Menu</p>
+	</div>
+	);
+  }
 
 function MovieCalendar() {
+  const [isHovering, setIsHovering] = useState(false);
+
+	const mouseOverHome = () => {
+		setIsHovering(true);
+	  };
+	
+	  const mouseOutHome = () => {
+		setIsHovering(false);
+	  };
+
   return (
     <div className="movieCalendar">
       <ul className="lightrope">
@@ -50,11 +69,13 @@ function MovieCalendar() {
   <li></li>
 </ul>
         <NavLink to="/">
-        <div className="renne">
+        <div className="renne" onMouseOver={mouseOverHome}
+              onMouseOut={mouseOutHome}>
         <img src="/images/reindeer.png" alt="rennes" />
         </div>
+        {isHovering && <HoveringReturnHome />}
         </NavLink>
-        <div className="main-contenu">
+      <div className="main-contenu">
           <h1>Calendrier de l'Avent</h1>
       <div className="calendar-container">
         {MoviesData.map((movie) => (

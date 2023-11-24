@@ -11,7 +11,27 @@
 
   .renne {
     height: 0vh;
+    margin-left: 6%;
   }
+
+  .reindeer-text {
+    border: 3px solid #989b0f;
+    background-color: #497a37;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 10%;
+    width: 13%;
+    height: 6%;
+    position: absolute;
+    top:25%;
+    left:-8%;
+  
+    p {
+      color: white;
+      font-size: 30px;
+    }
+  }
+  
 
   img {
     position: relative;
@@ -43,6 +63,7 @@
   h1 {
     color: var(--color-text);
     font-size: 2.5rem;
+    font-weight: 500;
   }
 
   .calendar-container {
@@ -57,34 +78,34 @@
     padding-left: 22px;
     justify-content: flex-start;
     flex-wrap: wrap;
-    height: 79vh;
+    height: 77vh;
     width: 60%;
   }
 
   .penguin {
     width: 25px;
     height: 45px;
-    bottom: 80%;
+    bottom: 78%;
     position: fixed;
-    animation: walk 40s linear infinite;
+    animation: walk 15s linear infinite;
   }
 
   @keyframes walk {
     0%,
     100% {
-      left: 0;
+      left: 22%;
       transform: translatex(-50%) scalex(-1);
     }
     49% {
-      left: 100%;
+      left: 78%;
       transform: translatex(-50%) scalex(-1);
     }
     50% {
-      left: 100%;
+      left: 78%;
       transform: translatex(-50%) scalex(1);
     }
     99% {
-      left: 0;
+      left: 22%;
       transform: translatex(-50%) scalex(1);
     }
   }
