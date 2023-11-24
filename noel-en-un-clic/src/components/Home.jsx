@@ -49,6 +49,7 @@ const Home = () => {
     setIsHoveringRecipe(false);
   };
 
+
   return (
     <div className="homepage">
       <h1>Noël en un clic</h1>
@@ -59,6 +60,7 @@ const Home = () => {
               className="liste"
               onMouseOver={mouseOverWish}
               onMouseOut={mouseOutWish}
+              
             >
               <img src="/images/Enveloppe.png" alt="enveloppe" />
             </div>
