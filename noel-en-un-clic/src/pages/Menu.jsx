@@ -141,7 +141,7 @@ function Menu(){
                    </div>
                    <div className="lutin-text-container">
                     <div className="image-lutin-container">
-                        <img src="../../public/page_menu/lutin_white.png" className="image-lutin" alt="image-lutin" />
+                        <img src="/images/page_menu/lutin_white.png" className="image-lutin" alt="image-lutin" />
                     </div>
                     <div className="text-container">
                         <p>Miam !Qu’il y aura t’il au menu ?</p>
@@ -150,10 +150,10 @@ function Menu(){
                 </div>
                 <div className="chosen-menu-container" id="testId">
                     <div className="pin-container">
-                        <img src="../../public/page_menu/pin.png" className="pin" alt="icon-pin" />
+                        <img src="/images/page_menu/pin.png" className="pin" alt="icon-pin" />
                     </div>
                     <div className="menu-title">
-                        <img src="../../public/page_menu/couvertatable.png" alt="couvert-icon" />
+                        <img src="/images/page_menu/couvertatable.png" alt="couvert-icon" />
                         <h3>Menu</h3>
                         <div className="button-pdf">
                         <GenericPdfdownloader 
