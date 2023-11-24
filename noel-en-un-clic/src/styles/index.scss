@@ -1,12 +1,13 @@
-
-@import '_Wishlist';
-@import '_settings';
-
+@import "Wishlist";
 @import url("_menu.scss");
-
 @import "settings";
 @import "home";
 @import "moviecalendar";
 @import "calendarcard";
 @import "calendarmovie";
+<<<<<<< HEAD
 @import "calendarnumber";
+=======
+@import "calendarnumber";
+@import "sendletter";
+>>>>>>> 747bc09533817e4ac4508d9bb7ca4a855b58fb89
