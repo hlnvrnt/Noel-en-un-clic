@@ -13,8 +13,6 @@ function Menu(){
     const [recetteIndex, setRecetteIndex] = useState(0);
     const [doubledMenu, setDoubledMenu] = useState("hide-warning");
    
-    
-
     const handleClick = () => {
         let stateMenu = [...menus];
         function checkId(element){
@@ -43,15 +41,9 @@ function Menu(){
         <>
         <body>
             <NavLink to="/">
-            <GenericPdfDownloader 
-          downloadFileName="CustomPdf" 
-          rootElementId="testId" 
-        />
-        
-       
-            <div className="renne">
-            <img src="/images/reindeer.png" alt="rennes" />
-            </div>
+                <div className="renne">
+                    <img src="/images/reindeer.png" alt="rennes" />
+                </div>
             </NavLink>
             <div className="menu-container">
                 <div className="menu-card-container">
@@ -99,29 +91,31 @@ function Menu(){
                     <div className="menu-title">
                         <img src="../../public/page_menu/couvertatable.png" alt="couvert-icon" />
                         <h3>menu</h3>
+                        <div className="button-pdf">
+                        <GenericPdfDownloader 
+                            downloadFileName="menu de noël " 
+                            rootElementId="testId"
+                        />  
+                    </div>
                     </div>
 
                     {menus.map((menu, index)=> {
                         return(
                         // eslint-disable-next-line react/jsx-key
                         <div className="menu-name-container">
-                        <div className="left-block">
-                        <div className="chosen-category-name-container">
-                            <div className={`menu-category  ${menu.category}`}>
-                                {menu.category}
-                            </div>
-                            <div className="chosen-menu-name">
-                                    <p>{menu.name}</p>
-                                </div>
-                            </div>
-                            
+                            <div className="left-block">
+                                <div className="chosen-category-name-container">
+                                    <div className={`menu-category  ${menu.category}`}>
+                                        {menu.category}
+                                    </div>
+                                    <div className="chosen-menu-name">
+                                            <p>{menu.name}</p>
+                                    </div>
+                                </div>                                    
                                 <div className="chosen-menu-image">
                                     <img src={menu.picture} className="menu-card-icon" alt="recette-image" />
                                 </div>
-                                
-                          
-                            
-                        </div>
+                            </div>
                         <div className="delete-icon-container">
                             <button onClick={()=> handleDelete(index)}>
                             <FaTrash className="icon-delete"/>
@@ -129,13 +123,10 @@ function Menu(){
                             {/*<img src="../../public/page_menu/delete.png" className="menu-card-icon" alt="icon-delete" />*/}
                         </div>
                     </div>)
-
                     })}
+                    </div>
+                    </div>
                     
-                </div>
-                
-            </div>
-           
         </body>
         </>
     );

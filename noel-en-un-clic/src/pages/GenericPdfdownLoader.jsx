@@ -1,6 +1,6 @@
-import React from 'react';
 import html2canvas from "html2canvas";
 import { jsPDF } from "jspdf";
+import { FaFilePdf } from "react-icons/fa6";
 
 const GenericPdfDownloader = ({rootElementId , downloadFileName}) => {
 
@@ -15,7 +15,10 @@ const GenericPdfDownloader = ({rootElementId , downloadFileName}) => {
             })
     }
 
-    return <button onClick={downloadPdfDocument}>Download Pdf</button>
+    return (<button onClick={downloadPdfDocument} className="style-button-pdf">
+        <FaFilePdf />
+        PDF
+        </button>)
 
 }
 
