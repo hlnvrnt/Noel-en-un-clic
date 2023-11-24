@@ -22,7 +22,7 @@
     }
     h1{
         color: var(--color-text);
-        font-family: var(--font-family-christmas);
+        font-size: 2.5rem;
     }
 
     .calendar-container {
@@ -37,7 +37,7 @@
         padding-left: 22px;
         justify-content:flex-start; 
         flex-wrap: wrap;
-        height:81vh;
+        height:79vh;
         width: 60%; 
 
     }
@@ -45,7 +45,7 @@
     .penguin {
         width: 25px;
         height: 45px;
-        bottom: 82%;
+        bottom: 80%;
         position: fixed;
         animation: walk 40s linear infinite;
       }
