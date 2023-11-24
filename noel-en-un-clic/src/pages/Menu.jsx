@@ -5,7 +5,7 @@ import { FaArrowCircleLeft } from "react-icons/fa";
 import { FaTrash } from "react-icons/fa";
 import  menuItemsData  from "./MenuItempsData";
 
-import GenericPdfDownloader from "./GenericPdfDownloader";
+import GenericPdfdownloader from "./GenericPdfdownloader";
 
 function HoveringReturnHome() {
 	return (
@@ -156,7 +156,7 @@ function Menu(){
                         <img src="../../public/page_menu/couvertatable.png" alt="couvert-icon" />
                         <h3>Menu</h3>
                         <div className="button-pdf">
-                        <GenericPdfDownloader 
+                        <GenericPdfdownloader 
                             downloadFileName="menu de noël " 
                             rootElementId="testId"
                         />  
